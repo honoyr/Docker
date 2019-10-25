@@ -1,0 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    01                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dgonor <marvin@42.fr>                      +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/10/24 17:01:44 by dgonor            #+#    #+#              #
+#    Updated: 2019/10/24 17:02:47 by dgonor           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+##Launch the hello-world container, and make sure that it prints its welcome message, then leaves it.
+
+docker run hello-world

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+##Get the IP address of the Char virtual machine.
+##docker-machine --help 
+
+
+docker-machine ip Char
