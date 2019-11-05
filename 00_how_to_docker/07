@@ -10,7 +10,9 @@
 #                                                                              #
 # **************************************************************************** #
 
-/*
-** Get the IP address of the Char virtual machine.
-** docker-machine --help 
-*/
+## Get the internal IP address of the overlord container without starting its 
+shell and in one command.
+## docker-machine --help 
+
+
+docker inspect -f '{{.NetworkSettings.IPAddress}}' overlord
