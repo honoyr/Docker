@@ -10,7 +10,6 @@
 #                                                                              #
 # **************************************************************************** #
 
-/*
-** Get the IP address of the Char virtual machine.
-** docker-machine --help 
-*/
+## Create another virtual machine with docker-machine using the virtualbox driver, and name it Aiur.
+
+docker-machine create --driver virtualbox Aiur

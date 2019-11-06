@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-/*
-** Get the IP address of the Char virtual machine.
-** docker-machine --help 
-*/
+##Look up the spawning-pool container’s logs in real time without running its shell.
+
+
+docker logs -f spawning-pool

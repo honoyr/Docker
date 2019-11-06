@@ -10,7 +10,6 @@
 #                                                                              #
 # **************************************************************************** #
 
-/*
-** Get the IP address of the Char virtual machine.
-** docker-machine --help 
-*/
+## Create a local swarm, the Char virtual machine should be its manager.
+
+docker swarm init --advertise-addr $(docker-machine ip Char)

@@ -10,7 +10,6 @@
 #                                                                              #
 # **************************************************************************** #
 
-/*
-** Get the IP address of the Char virtual machine.
-** docker-machine --help 
-*/
+##Display all the currently active containers on the Char virtual machine.
+
+docker ps
