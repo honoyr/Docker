@@ -10,7 +10,17 @@
 #                                                                              #
 # **************************************************************************** #
 
-/*
-** Get the IP address of the Char virtual machine.
-** docker-machine --help 
-*/
+## Turn Aiur into a slave of the local swarm in which Char is leader (the command to take control of Aiur is not requested).
+
+##docker-machine ssh Char
+## docker swarm init --advertise-addr 192.168.99.100
+##docker node ls
+## docker swarm join-token worker
+## open other terminal win
+## docker-machine ssh Aiur 
+## copy output from "docker swarm join-token worker" under manager and put smth like "docker swarm join --token SWMTKN-1-4flyhbzxuhbdoxxdjbw6kpneg8sjj108nszl91z7ll2fgokx7e-59y0rpqhprs85b5v66ag9xi3b 192.168.99.100:2377
+" to worker 
+
+docker-machine ssh Aiur "docker swarm join --token $(docker swarm join-token worker -q) $(docker-machine ip Char):2377"
+
+

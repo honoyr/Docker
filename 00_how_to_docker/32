@@ -10,7 +10,8 @@
 #                                                                              #
 # **************************************************************************** #
 
-/*
-** Get the IP address of the Char virtual machine.
-** docker-machine --help 
-*/
+## Force quit and delete all the containers (whatever their status), in one command.
+
+## docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
+
+docker rm -f $(docker ps -a -q)

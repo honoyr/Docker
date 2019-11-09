@@ -10,7 +10,8 @@
 #                                                                              #
 # **************************************************************************** #
 
-/*
-** Get the IP address of the Char virtual machine.
-** docker-machine --help 
-*/
+## Force quit and delete all the services on the local swarm, in one command.
+
+## https://docs.docker.com/engine/swarm/swarm-tutorial/delete-service/
+
+docker service rm $(docker service ls -q)

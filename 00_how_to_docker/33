@@ -10,7 +10,8 @@
 #                                                                              #
 # **************************************************************************** #
 
-/*
-** Get the IP address of the Char virtual machine.
-** docker-machine --help 
-*/
+## Delete all the container images stored on the Char virtual machine, in one command as well.
+
+## https://stackoverflow.com/questions/38060279/deleting-all-docker-images-and-containers
+
+docker rmi -f $(docker images -a -q)

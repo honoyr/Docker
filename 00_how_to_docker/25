@@ -10,7 +10,6 @@
 #                                                                              #
 # **************************************************************************** #
 
-/*
-** Get the IP address of the Char virtual machine.
-** docker-machine --help 
-*/
+## List all the services of the local swarm.
+
+docker service ls

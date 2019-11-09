@@ -10,7 +10,9 @@
 #                                                                              #
 # **************************************************************************** #
 
-/*
-** Get the IP address of the Char virtual machine.
-** docker-machine --help 
-*/
+## Create an overlay-type internal network that you will name overmind.
+
+##docker network create --help
+## https://docs.docker.com/network/overlay/
+
+docker network create -d overlay overmind
