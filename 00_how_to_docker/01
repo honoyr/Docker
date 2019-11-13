@@ -14,5 +14,11 @@
 
 ##Create a virtual machine with docker-machine using the virtualbox driver, and named Char.
 ## https://docs.docker.com/machine/reference/create/
+# You can check result by 'docker-machine ls'
+# Its pretty useful to give more memory and cpus to your machine to save time =)
+# docker-machine stop 'name'
+# VBoxManage modifyvm 'name' --cpus 4
+# VBoxManage modifyvm 'name' --memory 8000
+# docker-machine start 'name'
 
 docker-machine create --driver virtualbox Char
